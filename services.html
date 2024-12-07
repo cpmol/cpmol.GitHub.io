@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>基金</title>
+    <!-- Meta-Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="">
+    <script type="application/x-javascript">
+        addEventListener("load", function () { setTimeout(hideURLbar, 0); }, false);
+
+        function hideURLbar() { window.scrollTo(0, 1); }
+    </script>
+    <!-- //Meta-Tags -->
+    <!-- Custom-Theme-Files -->
+	<link href="css/bootstrap100.css" rel="stylesheet" type="text/css" media="all" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
+    
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/reset1.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/layout1.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style1.css" type="text/css" media="all">
+    
+    <link href="css/style100.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<!-- font-awesome icons -->
+    <link rel="stylesheet" href="css/font-awesome.min100.css" />
+    
+
+    <!-- //Custom-Theme-Files -->
+    <!-- Web-Fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" type="text/css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Muli:300,300i,400,400i" rel="stylesheet">
+    <!-- //Web-Fonts -->
+    <!-- Default-JavaScript-File -->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.marquee.min.js"></script>
+    <script type="text/javascript" src="js/canvasjs.min.js"></script>
+    <!-- //js -->
+    <link href="http://fonts.googleapis.com/css?family=Muli:300,300i,400,400i" rel="stylesheet">
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){		
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+	<script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.0.0-beta.4/libs/cn/index.js"></script>
+	<script>
+		new CozeWebSDK.WebChatClient({
+		  config: {
+			bot_id: '7444210301165305865',
+		  },
+		  componentProps: {
+			title: 'Coze',
+		  },
+		});
+	</script>
+    <!-- Header -->
+    <!-- banner -->
+    <div class="w3l-banner1">
+        <div class="header">
+            <!-- Top-Bar -->
+            <div class="top-bar">
+                <div class="container">
+                    <div class="header-nav">
+                        <nav class="navbar navbar-default">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                        data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <h1><a class="navbar-brand" href="index.html" style="font-size:40px;color: aliceblue;">武理智投</a></h1>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav ">
+                                    <li><a href="index.html" style="font-size:20px;">首页</a></li>
+                                    <li><a href="about.html" style="font-size:20px;">股票</a></li>
+                                    <li><a href="gallery.html" style="font-size:20px;">债券</a></li>
+                                    <li><a href="services.html" style="font-size:20px;">基金</a></li>
+                                    <li><a href="icons.html" style="font-size:20px;">保险</a></li>
+                                    <li><a href="contact.html" style="font-size:20px;">联系我们</a></li>
+                                </ul>
+                            </div>
+                            <!-- /navbar-collapse -->
+
+                        </nav>
+                        <div class="cd-main-header">
+                            <a class="cd-search-trigger" href="#cd-search"> <span></span></a>
+                            <!-- cd-header-buttons -->
+                        </div>
+                        <div id="cd-search" class="cd-search">
+                            <form action="#" method="post">
+                                <input name="Search" type="search" placeholder="Search...">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //Top-Bar -->
+        </div>
+    </div>
+    <!-- //banner -->
+    <!-- about -->
+    <div class="agileits-abt">
+        <div class="container">
+            <div class="ab-top">
+                <div class="col-md-6 ab-w3ls-left">
+                    <img src="images/106.jpg" class="img-responsive" alt="img">
+                </div>
+                <div class="col-md-6 ab-w3ls-right">
+                    <p class="mb-3" style="color: black;">“武理智投”的基金购买功能，为用户提供了一个全面的基金投资平台，涵盖多种类型的基金产品，满足不同投资者的需求。</p>
+                    <p class="mb-3" style="color: black;">“武理智投”将包括股票型、债券型、混合型、指数型等各种类型在内的国内外知名基金管理公司的众多产品汇聚，用户可根据自己的投资偏好和风险承受能力，有针对性地选择适合自己的产品。各基金均配以包含但不限于基金概况、历史业绩、资产配置、管理团队等信息的详细介绍页面，帮助投资者深入了解并加以取舍。</p>
+
+                    
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <!-- team -->
+        </div>
+    </div>
+
+	<div class="news-original">
+		<div class="container">
+			<div class="agileinfo_news_original_grids w3_agile_news_market_grids">
+				<div class="col-md-9 w3ls_mutual_funds_grid1_jkjk">
+					<div class="col-md-8 w3ls_mutual_funds_grid_left">
+						<div class="w3l_mutual_funds1">
+							<h3 style="margin-bottom: 15px;">基金超市</h3>
+								<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs" style="margin-top: 5px;">
+									<ul id="myTab" class="nav nav-tabs" role="tablist" style="display: flex; flex-direction: row; justify-content: space-between;">
+										<li role="presentation" class="active" style="flex-shrink: 0;"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">股票型</a></li>
+										<li role="presentation" style="flex-shrink: 0;"><a href="#latest" role="tab" id="latest-tab" data-toggle="tab" aria-controls="latest">混合型</a></li>
+										<li role="presentation" style="flex-shrink: 0;"><a href="#experts" role="tab" id="experts-tab" data-toggle="tab" aria-controls="experts">债券型</a></li>
+										<li role="presentation" style="flex-shrink: 0;"><a href="#read" role="tab" id="read-tab" data-toggle="tab" aria-controls="read">指数型</a></li>
+									</ul>
+								<div id="myTabContent" class="tab-content">
+									<div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
+										<div class="w3_agileits_gain_list">
+											<table class="w3_agile_all_trade w3_agile_all_trade_funds w3_table_trade">
+												<tr>
+													<th class="w3_agileits_head"><b>基金代码</b></th>
+													<td class="w3_agileits_head1"><b>单位净值</b></td>
+													<td class="w3_agileits_head1"><b>累计净值</b></td>
+													<td class="w3_agileits_head1"><b>近三月历史增长率统计</b></td>
+													<td class="w3_agileits_head1"><b>手续费</b></td>
+													<td class="w3_agileits_head1"><b>操作</b></td>
+												</tr>
+												<tr>
+													<th class="w3_agile_th">
+														<a>018128</a>
+													</th>
+													<td class="agileits_w3layouts_td">1.4865</td>
+													<td class="agileits_w3layouts_td">1.4865</td>
+													<td class="agileits_w3layouts_td" style="color:#00AA00;">113.85%</td>
+													<td class="agileits_w3layouts_td">0.10%</td>
+													<td class="agileits_w3layouts_td">购买</td>
+												</tr>
+												<tr>
+													<th class="w3_agile_th">
+														<a>017512</a>
+													</th>
+													<td class="agileits_w3layouts_td">1.4922</td>
+													<td class="agileits_w3layouts_td">1.4922</td>
+													<td class="agileits_w3layouts_td" style="color:#00AA00;">110.61%</td>
+													<td class="agileits_w3layouts_td">0.12%</td>
+													<td class="agileits_w3layouts_td">购买</td>
+												</tr>
+												<tr>
+													<th class="w3_agile_th">
+														<a>018129</a>
+													</th>
+													<td class="agileits_w3layouts_td">1.4755</td>
+													<td class="agileits_w3layouts_td">1.4755</td>
+													<td class="agileits_w3layouts_td" style="color:#00AA00;">113.62%</td>
+													<td class="agileits_w3layouts_td">0.00%</td>
+													<td class="agileits_w3layouts_td">购买</td>
+												</tr>
+												<tr>
+													<th class="w3_agile_th">
+														<a>017513</a>
+													</th>
+													<td class="agileits_w3layouts_td">1.4838</td>
+													<td class="agileits_w3layouts_td">1.4838</td>
+													<td class="agileits_w3layouts_td" style="color:#00AA00;">110.47%</td>
+													<td class="agileits_w3layouts_td">0.00%</td>
+													<td class="agileits_w3layouts_td">购买</td>
+												</tr>
+												<tr>
+													<th class="w3_agile_th">
+														<a>513090</a>
+													</th>
+													<td class="agileits_w3layouts_td">1.5218</td>
+													<td class="agileits_w3layouts_td">1.5218</td>
+													<td class="agileits_w3layouts_td" style="color:#00AA00;">68.60%</td>
+													<td class="agileits_w3layouts_td">0.00%</td>
+													<td class="agileits_w3layouts_td">购买</td>
+												</tr>			
+											</table>
+											<div style="padding-top:10px;font-size:13px;"><a style="color:#337ab7;">More »</a></div>
+										</div>
+									</div>
+									<div role="tabpanel" class="tab-pane fade" id="latest" aria-labelledby="latest-tab">
+										<div class="w3_agileits_gain_list">
+											<table class="w3_agile_all_trade w3_agile_all_trade_funds w3_table_trade">
+												<tr>
+													<th class="w3_agileits_head"><b>基金代码</b></th>
+													<td class="w3_agileits_head1"><b>单位净值</b></td>
+													<td class="w3_agileits_head1"><b>累计净值</b></td>
+													<td class="w3_agileits_head1"><b>近三月历史增长率统计</b></td>
+													<td class="w3_agileits_head1"><b>手续费</b></td>
+													<td class="w3_agileits_head1"><b>操作</b></td>
+												</tr>
+												<tr>
+													<th class="w3_agile_th">
+														<a>014283</a>
+													</th>
+													<td class="agileits_w3layouts_td">1.5693</td>
+													<td class="agileits_w3layouts_td">1.5693</td>
+													<td class="agileits_w3layouts_td" style="color:#00AA00;">102.80%</td>
+													<td class="agileits_w3layouts_td">0.15%</td>
+													<td class="agileits_w3layouts_td">购买</td>
+												</tr>
+												<tr>
+													<th class="w3_agile_th">
+														<a>014279</a>
+													</th>
+													<td class="agileits_w3layouts_td">1.2856</td>
+													<td class="agileits_w3layouts_td">1.3486</td>
+													<td class="agileits_w3layouts_td" style="color:#00AA00;">93.00%</td>
+													<td class="agileits_w3layouts_td">0.15%</td>
+													<td class="agileits_w3layouts_td">购买</td>
+												</tr>
+												<tr>
+													<th class="w3_agile_th">
+														<a>014280</a>
+													</th>
+													<td class="agileits_w3layouts_td">1.2694</td>
+													<td class="agileits_w3layouts_td">1.3324</td>
+													<td class="agileits_w3layouts_td" style="color:#00AA00;">92.83%</td>
+													<td class="agileits_w3layouts_td">0.00%</td>
+													<td class="agileits_w3layouts_td">购买</td>
+												</tr>
+												<tr>
+													<th class="w3_agile_th">
+														<a>014275</a>
+													</th>
+													<td class="agileits_w3layouts_td">1.3827</td>
+													<td class="agileits_w3layouts_td">1.4047</td>
+													<td class="agileits_w3layouts_td" style="color:#00AA00;">101.39%</td>
+													<td class="agileits_w3layouts_td">0.15%</td>
+													<td class="agileits_w3layouts_td">购买</td>
+												</tr>
+												<tr>
+													<th class="w3_agile_th">
+														<a>014276</a>
+													</th>
+													<td class="agileits_w3layouts_td">1.3752</td>
+													<td class="agileits_w3layouts_td">1.3832</td>
+													<td class="agileits_w3layouts_td" style="color:#00AA00;">101.13%</td>
+													<td class="agileits_w3layouts_td">0.00%</td>
+													<td class="agileits_w3layouts_td">购买</td>
+												</tr>		
+											</table>
+											<div style="padding-top:10px;font-size:13px;"><a style="color:#337ab7;">More »</a></div>
+										</div>
+									</div>
+									<div role="tabpanel" class="tab-pane fade" id="experts" aria-labelledby="experts-tab">
+										<div class="w3_agileits_gain_list">
+											<table class="w3_agile_all_trade w3_agile_all_trade_funds w3_table_trade">
+												<tr>
+													<th class="w3_agileits_head"><b>基金代码</b></th>
+													<td class="w3_agileits_head1"><b>单位净值</b></td>
+													<td class="w3_agileits_head1"><b>累计净值</b></td>
+													<td class="w3_agileits_head1"><b>近三月历史增长率统计</b></td>
+													<td class="w3_agileits_head1"><b>手续费</b></td>
+													<td class="w3_agileits_head1"><b>操作</b></td>
+												</tr>
+												<tr>
+													<th class="w3_agile_th">
+														<a>003401</a>
+													</th>
+													<td class="agileits_w3layouts_td">1.6659</td>
+													<td class="agileits_w3layouts_td">1.6659</td>
+													<td class="agileits_w3layouts_td" style="color:#00AA00;">102.80%</td>
+													<td class="agileits_w3layouts_td">0.08%</td>
+													<td class="agileits_w3layouts_td">购买</td>
+												</tr>
+												<tr>
+													<th class="w3_agile_th">
+														<a>015908</a>
+													</th>
+													<td class="agileits_w3layouts_td">1.3752</td>
+													<td class="agileits_w3layouts_td">1.3832</td>
+													<td class="agileits_w3layouts_td" style="color:#00AA00;">101.13%</td>
+													<td class="agileits_w3layouts_td">0.00%</td>
+													<td class="agileits_w3layouts_td">购买</td>
+												</tr>
+												<tr>
+													<th class="w3_agile_th">
+														<a>015909E</a>
+													</th>
+													<td class="agileits_w3layouts_td">1.5693</td>
+													<td class="agileits_w3layouts_td">1.5693</td>
+													<td class="agileits_w3layouts_td" style="color:#00AA00;">102.80%</td>
+													<td class="agileits_w3layouts_td">0.15%</td>
+													<td class="agileits_w3layouts_td">购买</td>
+												</tr>
+												<tr>
+													<th class="w3_agile_th">
+														<a>010310</a>
+													</th>
+													<td class="agileits_w3layouts_td">1.5693</td>
+													<td class="agileits_w3layouts_td">1.5693</td>
+													<td class="agileits_w3layouts_td" style="color:#00AA00;">102.80%</td>
+													<td class="agileits_w3layouts_td">0.15%</td>
+													<td class="agileits_w3layouts_td">购买</td>
+												</tr>
+												<tr>
+													<th class="w3_agile_th">
+														<a>010309</a>
+													</th>
+													<td class="agileits_w3layouts_td">1.4922</td>
+													<td class="agileits_w3layouts_td">1.4922</td>
+													<td class="agileits_w3layouts_td" style="color:#00AA00;">110.61%</td>
+													<td class="agileits_w3layouts_td">0.12%</td>
+													<td class="agileits_w3layouts_td">购买</td>
+												</tr>		
+											</table>
+											<div style="padding-top:10px;font-size:13px;"><a style="color:#337ab7;">More »</a></div>
+										</div>
+									</div>
+									<div role="tabpanel" class="tab-pane fade" id="read" aria-labelledby="read-tab">
+										<div class="w3_agileits_gain_list">
+											<table class="w3_agile_all_trade w3_agile_all_trade_funds w3_table_trade">
+												<tr>
+													<th class="w3_agileits_head"><b>基金代码</b></th>
+													<td class="w3_agileits_head1"><b>单位净值</b></td>
+													<td class="w3_agileits_head1"><b>累计净值</b></td>
+													<td class="w3_agileits_head1"><b>近三月历史增长率统计</b></td>
+													<td class="w3_agileits_head1"><b>手续费</b></td>
+													<td class="w3_agileits_head1"><b>操作</b></td>
+												</tr>
+												<tr>
+													<th class="w3_agile_th">
+														<a>159930</a>
+													</th>
+													<td class="agileits_w3layouts_td">1.1694</td>
+													<td class="agileits_w3layouts_td">1.1694</td>
+													<td class="agileits_w3layouts_td" style="color:#00AA00;">2.18%
+													</td><td class="agileits_w3layouts_td">0.12%</td>
+													<td class="agileits_w3layouts_td">购买</td>
+												</tr>
+												<tr>
+													<th class="w3_agile_th">
+														<a>159945</a>
+													</th>
+													<td class="agileits_w3layouts_td">1.4306</td>
+													<td class="agileits_w3layouts_td">1.4306</td>
+													<td class="agileits_w3layouts_td" style="color:#00AA00;">2.52%</td>
+													<td class="agileits_w3layouts_td">0.25%</td>
+													<td class="agileits_w3layouts_td">购买</td>
+												</tr>
+												<tr>
+													<th class="w3_agile_th">
+														<a>016814</a>
+													</th>
+													<td class="agileits_w3layouts_td">1.8940</td>
+													<td class="agileits_w3layouts_td">1.8940</td>
+													<td class="agileits_w3layouts_td" style="color:#00AA00;">1.71%</td>
+													<td class="agileits_w3layouts_td">0.02%</td>
+													<td class="agileits_w3layouts_td">购买</td>
+												</tr>
+												<tr>
+													<th class="w3_agile_th">
+														<a>168204</a>
+													</th>
+													<td class="agileits_w3layouts_td">1.9050</td>
+													<td class="agileits_w3layouts_td">1.9050</td>
+													<td class="agileits_w3layouts_td" style="color:#00AA00;">1.72%</td>
+													<td class="agileits_w3layouts_td">0.22%</td>
+													<td class="agileits_w3layouts_td">购买</td>
+												</tr>
+												<tr>
+													<th class="w3_agile_th">
+														<a>515220</a>
+													</th>
+													<td class="agileits_w3layouts_td">1.2189</td>
+													<td class="agileits_w3layouts_td">2.6078</td>
+													<td class="agileits_w3layouts_td" style="color:#00AA00;">1.72%</td>
+													<td class="agileits_w3layouts_td">0.22%</td>
+													<td class="agileits_w3layouts_td">购买</td>
+												</tr>
+											</table>
+											<div style="padding-top:10px;font-size:13px;"><a style="color:#337ab7;">More »</a></div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<div class="agile_top_10_mutual_funds">
+							<h3>新闻资讯</h3>
+							<div class="w3_agileits_gain_list scrollbar w3_scrollbar1" id="style-1">
+								<table class="w3_agile_all_trade w3_agile_all_trade_funds w3_table_trade">
+									<tr>
+										<th class="agileits_w3layouts_top_fund_th">
+											<a>公募机构2025年策略会干货来了 这一方向备受关注！</a>
+										</th>
+										<td class="agileits_w3layouts_td">12/9</td>
+									</tr>
+									<tr>
+										<th class="agileits_w3layouts_top_fund_th">
+											<a>基金营销多举措降本 打出差异化“增效牌”</a>
+										</th>
+										<td class="agileits_w3layouts_td">12/9</td>
+									</tr>
+									<tr>
+										<th class="agileits_w3layouts_top_fund_th">
+											<a>冲刺最后十几个交易日 基金排名战开打</a>
+										</th>
+										<td class="agileits_w3layouts_td">12/9</td>
+									</tr>
+									<tr>
+										<th class="agileits_w3layouts_top_fund_th">
+											<a>岁末债市顺风顺水 超九成纯债基金净值创历史新高</a>
+										</th>
+										<td class="agileits_w3layouts_td">12/9</td>
+									</tr>
+									<tr>
+										<th class="agileits_w3layouts_top_fund_th">
+											<a>朱少醒、李晓星、冯明远等积极调研 科技成长赛道</a>
+										</th>
+										<td class="agileits_w3layouts_td">12/9</td>
+									</tr>			
+									<tr>
+										<th class="agileits_w3layouts_top_fund_th">
+											<a>A股市场风格大变！风吹向“中字头”红利板块回归</a>
+										</th>
+										<td class="agileits_w3layouts_td">12/9</td>
+									</tr>	
+									<tr>
+										<th class="agileits_w3layouts_top_fund_th">
+											<a>谷子经济龙头股继续跌停！什么情况？</a>
+										</th>
+										<td class="agileits_w3layouts_td">12/9</td>
+									</tr>
+									<tr>
+										<th class="agileits_w3layouts_top_fund_th">
+											<a>征战2025“开门红”来了</a>
+										</th>
+										<td class="agileits_w3layouts_td">12/9</td>
+									</tr>
+									<tr>
+										<th class="agileits_w3layouts_top_fund_th">
+											<a>这类基金 发行升温</a>
+										</th>
+										<td class="agileits_w3layouts_td">12/9</td>
+									</tr>
+									<tr>
+										<th class="agileits_w3layouts_top_fund_th">
+											<a>12月3日23家公司获基金调研</a>
+										</th>
+										<td class="agileits_w3layouts_td">12/9</td>
+									</tr>
+									<tr>
+										<th class="agileits_w3layouts_top_fund_th">
+											<a>十年期国债利率进入“1字头” 基金经理：10万亿资金或重新配置</a>
+										</th>
+										<td class="agileits_w3layouts_td">12/9</td>
+									</tr>
+									<tr>
+										<th class="agileits_w3layouts_top_fund_th">
+											<a>大红包频频 前11月基金分红超1750亿元</a>
+										</th>
+										<td class="agileits_w3layouts_td">12/9</td>
+									</tr>
+									<tr>
+										<th class="agileits_w3layouts_top_fund_th">
+											<a>又抄底了！</a>
+										</th>
+										<td class="agileits_w3layouts_td">12/9</td>
+									</tr>
+									<tr>
+										<th class="agileits_w3layouts_top_fund_th">
+											<a>A股震荡市 “小微风格”领风骚</a>
+										</th>
+										<td class="agileits_w3layouts_td">12/9</td>
+									</tr>
+									<tr>
+										<th class="agileits_w3layouts_top_fund_th">
+											<a>多家公募密集恢复债基大额申购！解读来了</a>
+										</th>
+										<td class="agileits_w3layouts_td">12/9</td>
+									</tr>
+									<tr>
+										<th class="agileits_w3layouts_top_fund_th">
+											<a>年内已有近4000只基金变更经理</a>
+										</th>
+										<td class="agileits_w3layouts_td">12/9</td>
+									</tr>
+								</table>
+							</div>
+							<div style="padding-top:10px;font-size:13px;text-align:right;"><a style="color:#337ab7;">More »</a></div>
+						</div>
+						<div class="agileinfo_fund_offers">
+							<h3><class="blink_me" alt=" ">新发基金</h3>
+							<div class="agileinfo_fund_offers_table">
+								<table class="w3_table_trade">
+									<tr>
+										<th>发行公司</th>
+										<th class="w3_agileits_head1">代码</th>
+										<th class="w3_agileits_head1">基金类型</th>
+										<th class="w3_agileits_head1">集中认购期</th>
+									</tr>
+									<tr>
+										<td><a>华泰柏瑞基金</a></td>
+										<td class="agileits_w3layouts_td">520500</td>
+										<td class="agileits_w3layouts_td">指数型——海外股票</td>
+										<td class="agileits_w3layouts_td">2024/09.12~24/12/11</td>
+									</tr>  
+									<tr>
+										<td><a>东方基金</a></td>
+										<td class="agileits_w3layouts_td">021191</td>
+										<td class="agileits_w3layouts_td">混合型——偏债</td>
+										<td class="agileits_w3layouts_td">2024/09.13~24/12/12</td>
+									</tr>  
+									<tr>
+										<td><a>平安基金</a></td>
+										<td class="agileits_w3layouts_td">022119</td>
+										<td class="agileits_w3layouts_td">混合型-偏股</td>
+										<td class="agileits_w3layouts_td">2024/09.13~24/12/12</td>
+									</tr>  
+									<tr>
+										<td><a>东方基金</a></td>
+										<td class="agileits_w3layouts_td">021192</td>
+										<td class="agileits_w3layouts_td">混合型——偏债</td>
+										<td class="agileits_w3layouts_td">2024/09.13~24/12/12</td>
+									</tr>  
+									<tr>
+										<td><a>平安基金</a></td>
+										<td class="agileits_w3layouts_td">022120</td>
+										<td class="agileits_w3layouts_td">混合型——偏股</td>
+										<td class="agileits_w3layouts_td">2024/09.13~24/12/12</td>
+									</tr>  
+												
+								</table>
+							</div>
+							<div style="padding-top:10px;font-size:13px;text-align:right;"><a style="color:#337ab7;">More »</a></div>
+						</div>
+					</div>
+					<div class="col-md-4 w3ls_mutual_funds_grid_right">
+						<div class="agileits_technical_research">
+							<h3><i class="fa fa-bar-chart" aria-hidden="true"></i>基金行情</h3>
+							<h4>沪深基金行情</h4>
+							<div class="panel-body panel_text">
+								<img src="images/100.jpg" class="img-responsive" alt="img">
+							</div>
+							<h4>香港基金行情</h4>
+							<div class="panel-body panel_text">
+								<img src="images/102.jpg" class="img-responsive" alt="img">
+							</div>
+							<h4>欧美基金行情</h4>
+							<div class="panel-body panel_text">
+								<img src="images/101.jpg" class="img-responsive" alt="img">
+							</div>
+							<h4>基金行情</h4>
+							<div class="panel-body panel_text">
+								<img src="images/103.jpg" class="img-responsive" alt="img">
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-3 agileinfo_news_original_grids_right">
+					<div class="w3layouts_add_market">
+						<img src="images/104.jpg" alt=" " class="img-responsive" />
+					</div>
+					<div class="w3_stocks">
+						<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+							<ul id="myTab2" class="nav nav-tabs nav-tabs1" role="tablist" style="display: flex; flex-direction: row; justify-content: space-around;">
+								<li role="presentation" class="active" style="flex-shrink: 0;"><a href="#home2" id="home2-tab" role="tab" data-toggle="tab" aria-controls="home2" aria-expanded="true">基金分红</a></li>
+								<li role="presentation" style="flex-shrink: 0;"><a href="#latest2" role="tab" id="latest2-tab" data-toggle="tab" aria-controls="latest2">基金拆分</a></li>
+								<li role="presentation" style="flex-shrink: 0;"><a href="#experts2" role="tab" id="experts2-tab" data-toggle="tab" aria-controls="experts2">申购状态</a></li>
+							</ul>
+							<div id="myTabContent2" class="tab-content">
+								<div role="tabpanel" class="tab-pane fade in active" id="home2" aria-labelledby="home2-tab">
+									<div class="w3l_stocks">
+										<div class="w3l_stocks1">
+											<a><h4>华安证券合赢六个月持有债券</h4></a>
+											<p>579.80<i style="color:#00AA00;"><span class="caret caret1"></span>1.85<label>(0.33%)</label></i></p>
+										</div>
+										<div class="w3l_stocks1">
+											<a><h4>华安证券合赢三个月持有债券</h4></a>
+											<p>1,016.35<i><span class="caret"></span>-4.95<label>(-0.48%)</label></i></p>
+										</div>
+										<div class="w3l_stocks1">
+											<a><h4>华安证券合赢添利债券</h4></a>
+											<p>255.70<i><span class="caret"></span>-3.75<label>(-1.45%)</label></i></p>
+										</div>
+										<div class="w3l_stocks1">
+											<a><h4>华安证券合赢九个月持有</h4></a>
+											<p>808.25<i><span class="caret"></span>-13.75<label>(-1.75%)</label></i></p>
+										</div>
+										<div class="w3l_stocks1">
+											<a><h4>华安证券合赢三个月定开</h4></a>
+											<p>2,548.70<i><span class="caret"></span>-54.80<label>(-2.10%)</label></i></p>
+										</div>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="latest2" aria-labelledby="latest2-tab">
+									<div class="w3l_stocks">
+										<div class="w3l_stocks1">
+											<a><h4>博时双月薪定期支付债券</h4></a>
+											<p>25.975<i style="color:#00AA00;"><span class="caret caret1"></span>0.06<label>(0.25%)</label></i></p>
+										</div>
+										<div class="w3l_stocks1">
+											<a><h4>嘉实中证500ETF</h4></a>
+											<p>180.83<i style="color:#00AA00;"><span class="caret caret1"></span>0.14<label>(0.08%)</label></i></p>
+										</div>
+										<div class="w3l_stocks1">
+											<a><h4>招商招利一年理财债券</h4></a>
+											<p>31.918<i style="color:#00AA00;"><span class="caret caret1"></span>0.02<label>(0.05%)</label></i></p>
+										</div>
+										<div class="w3l_stocks1">
+											<a><h4>招商定期宝六个月期理财债券</h4></a>
+											<p>80.11<i style="color:#00AA00;"><span class="caret caret1"></span>0.37<label>(0.46%)</label></i></p>
+										</div>
+										<div class="w3l_stocks1">
+											<a><h4>华泰柏瑞中证1000ETF</h4></a>
+											<p>37.592<i style="color:#00AA00;"><span class="caret caret1"></span>0.14<label>(0.36%)</label></i></p>
+										</div>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="experts2" aria-labelledby="experts2-tab">
+									<div class="w3l_stocks">
+										<div class="w3l_stocks1">
+											<a><h4 style="text-transform:capitalize;">华夏成长混合</h4></a>
+											<p>318.10<i><span class="caret"></span>-4.05<label>(-1.26%)</label></i></p>
+										</div>
+										<div class="w3l_stocks1">
+											<a><h4 style="text-transform:capitalize;">中海可转债债券A</h4></a>
+											<p>177.10<i style="color:#00AA00;"><span class="caret caret1"></span>2.1<label>(1.2%)</label></i></p>
+										</div>
+										<div class="w3l_stocks1">
+											<a><h4 style="text-transform:capitalize;">中海可转债债券C</h4></a>
+											<p>3231.00<i><span class="caret"></span>-61<label>(-1.85%)</label></i></p>
+										</div>
+										<div class="w3l_stocks1">
+											<a><h4 style="text-transform:capitalize;">嘉实增强信用定期债券</h4></a>
+											<p>44726.00<i><span class="caret"></span>-718<label>(-1.58%)</label></i></p>
+										</div>
+										<div class="w3l_stocks1">
+											<a><h4 style="text-transform:capitalize;">西部利得量化成长混合A</h4></a>
+											<p>31285.00<i><span class="caret"></span>-119<label>(-0.38%)</label></i></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="w3_latest_stock">
+						<img src="images/105.jpg" alt=" " class="img-responsive" />
+						<div class="w3_latest_stock_pos">
+							<h3>latest <span>fund<i>market</i> updates</span></h3>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //news-original -->
+<!-- footer -->
+<div class="footer-top">
+	<div class="container">
+		<div class="col-md-5 w3l-footer-top">
+			<h3>Contact</h3>
+			<p>If you have any ideas and requirements, please contact us</p>
+
+				<form action="#" method="post" class="newsletter">
+					<input class="email" type="email" placeholder="Your email..." required="">
+					<input type="submit" class="submit" value="">
+				</form>
+				
+		</div>
+		
+		<div class="col-md-5 wthree-footer-top">
+			<h3>About</h3>
+				<p>"WUTI" is an innovative intelligent financial assistant, relying on intelligent interactive functions, using natural language processing and voice technology to accurately understand user needs and provide intimate services. </p>
+		</div>
+		<div class="col-md-2 w3ls-footer-top">
+			<h3>Options</h3>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">Stock</a></li>
+				<li><a href="gallery.html">Bond</a></li>
+				<li><a href="services.html">Fund</a></li>
+				<li><a href="icons.html">Insurance</a></li>
+			</ul>
+		</div>
+			<div class="clearfix"></div>
+	</div>
+</div>
+    <!-- //team -->
+
+
+    <!-- //footer -->
+</body>
+
+</html>
